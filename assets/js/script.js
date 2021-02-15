@@ -4,41 +4,25 @@ console.log("now = " + currentDate);
 
 // This function displays the current date at the top of the planner.
 function setDate() {
-    // var displayDate = $("#currentDay");
     var displayDate = document.getElementById("currentDay");
     displayDate.innerHTML = currentDate;
 }
 
 setDate();
 
-
+// This variable is used to determine whether a time-block is in the past, present, or future.
 var currentHour = moment().format("H");
 
-console.log("current hour is " + currentHour);
-
-var now = "9";
-// var timeBlockString = JSON.stringify(timeBlockID);
-
-// console.log(timeBlockID);
-// console.log(timeBlockString);
-// console.log(timeBlockString.type);
-
-// function testThis () {
-//     console.log(timeBlockID);
-// }
-
 function pastPresentFuture9 () {
-    // var timeBlockID = $("#9");
-
-    if (now == 9) {
+    if (currentHour == 9) {
         console.log("yes, it's 9");
         $("#9").removeClass("past");
         $("#9").removeClass("future");
         $("#9").addClass("present");
     } 
 
-    else if (now > 9) {
-        console.log("yes, it's 9");
+    else if (currentHour > 9) {
+        console.log("9 is in the past");
         $("#9").removeClass("present");
         $("#9").removeClass("future");
         $("#9").addClass("past");
@@ -52,3 +36,11 @@ function pastPresentFuture9 () {
 }
 
  pastPresentFuture9();
+//  pastPresentFuture10();
+//  pastPresentFuture11();
+//  pastPresentFutur12();
+//  pastPresentFuture13();
+//  pastPresentFuture14();
+//  pastPresentFuture15();
+//  pastPresentFuture16();
+//  pastPresentFuture17();
