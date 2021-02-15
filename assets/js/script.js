@@ -16,6 +16,14 @@ var currentHour = moment().format("hA");
 
 console.log("current hour is " + currentHour);
 
+var now = "4PM";
+var timeBlockID = $(".time-block").attr("id");
+
+console.log(timeBlockID);
+
+// function testThis () {
+//     console.log(timeBlockID);
+// }
 
 // function pastPresentFuture () {
 //     if 
