@@ -10,6 +10,18 @@ function setDate() {
 
 setDate();
 
+var tasks = [];
+
+$(".saveBtn").on("click", function(){
+
+    var taskDescription = document.getElementById("9amTask");
+    console.log(taskDescription.value);
+    tasks.push(taskDescription);
+    console.log("tasks = " + tasks);
+
+})
+console.log("tasks = " + tasks);
+
 // This variable is used to determine whether a time-block is in the past, present, or future.
 var currentHour = moment().format("H");
 
