@@ -12,7 +12,7 @@ function setDate() {
 setDate();
 
 
-var currentHour = moment().format("h");
+var currentHour = moment().format("H");
 
 console.log("current hour is " + currentHour);
 
@@ -36,6 +36,13 @@ function pastPresentFuture9 () {
         $("#9").removeClass("future");
         $("#9").addClass("present");
     } 
+
+    else if (now > 9) {
+        console.log("yes, it's 9");
+        $("#9").removeClass("present");
+        $("#9").removeClass("future");
+        $("#9").addClass("past");
+    }
 
     else {
         console.log("didn't work");
