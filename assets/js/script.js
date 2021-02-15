@@ -45,7 +45,9 @@ function pastPresentFuture9 () {
     }
 
     else {
-        console.log("didn't work");
+        $("#9").removeClass("present");
+        $("#9").removeClass("past");
+        $("#9").addClass("future");
     }
 }
 
