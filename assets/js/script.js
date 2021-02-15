@@ -12,28 +12,34 @@ function setDate() {
 setDate();
 
 
-var currentHour = moment().format("hA");
+var currentHour = moment().format("h");
 
 console.log("current hour is " + currentHour);
 
-var now = "9AM";
-var timeBlockID = $(".time-block").attr("id");
-var timeBlockString = JSON.stringify(timeBlockID);
+var now = "9";
+// var timeBlockString = JSON.stringify(timeBlockID);
 
-console.log(timeBlockID);
-console.log(timeBlockString);
-console.log(timeBlockString.type);
+// console.log(timeBlockID);
+// console.log(timeBlockString);
+// console.log(timeBlockString.type);
 
 // function testThis () {
 //     console.log(timeBlockID);
 // }
 
-function pastPresentFuture () {
-    if (now == timeBlockID) {
-        $(".time-block").removeClass("past");
-        $(".time-block").removeClass("future");
-        $(".time-block").addClass("present");
+function pastPresentFuture9 () {
+    // var timeBlockID = $("#9");
+
+    if (now == 9) {
+        console.log("yes, it's 9");
+        $("#9").removeClass("past");
+        $("#9").removeClass("future");
+        $("#9").addClass("present");
     } 
+
+    else {
+        console.log("didn't work");
+    }
 }
 
- pastPresentFuture();
+ pastPresentFuture9();
