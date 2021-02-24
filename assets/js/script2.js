@@ -11,27 +11,46 @@ function setDate() {
 setDate();
 
 var tasks = [
-    9: "",
-    10: "",
-    11: "",
-    12: "",
-    13: "",
-    14: "",
-    15: "",
-    16: "",
-    17: "",
-];
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+]
+
+// var tasks = {
+//     9: "",
+//     10: "",
+//     11: "",
+//     12: "",
+//     13: "",
+//     14: "",
+//     15: "",
+//     16: "",
+//     17: "",
+// };
+
+
 
 $("#9Btn").on("click", function(){
     event.preventDefault();
-
     var taskDescription = document.getElementById("9Task");
-    console.log(taskDescription.value);
-    tasks.push(taskDescription);
-    console.log("tasks = " + tasks);
-
+    localStorage.setItem("9AM", taskDescription.value);
 })
-console.log("tasks = " + tasks);
+
+var nineAmTask = localStorage.getItem("9AM");
+console.log("My 9 is " + nineAmTask);
+
+function showTasks() {
+    $("#9Task").text(nineAmTask);
+}
+
+showTasks();
+
 
 // This variable is used to determine whether a time-block is in the past, present, or future.
 var currentHour = moment().format("H");
