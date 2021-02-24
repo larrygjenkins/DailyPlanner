@@ -11,8 +11,6 @@ function setDate() {
 setDate();
 
 
-
-
 // This event listener adds task descriptions to local storage when a save button is selected.
 $(".saveBtn").on("click", function(){
     event.preventDefault();
@@ -38,24 +36,33 @@ $(".saveBtn").on("click", function(){
     localStorage.setItem("5PM", taskDescriptionSeventeen.value);
 })
 
-// $("#10Btn").on("click", function(){
-//     event.preventDefault();
-//     var taskDescription = document.getElementById("10Task");
-//     localStorage.setItem("10AM", taskDescription.value);
-// })
-
 // These variables are used to retrieve tasks from location Storage.
 var nineAmTask = localStorage.getItem("9AM");
 var tenAmTask = localStorage.getItem("10AM");
+var elevenAmTask = localStorage.getItem("11AM");
+var twelvePmTask = localStorage.getItem("12PM");
+var onePmTask = localStorage.getItem("1PM");
+var twoPmTask = localStorage.getItem("2PM");
+var threePmTask = localStorage.getItem("3PM");
+var fourPmTask = localStorage.getItem("4PM");
+var fivePmTask = localStorage.getItem("5PM");
 
 
 // This function takes the text within local storage and assigns it to the appropriate text area within the planner. 
 function showTasks() {
     $("#9Task").text(nineAmTask);
     $("#10Task").text(tenAmTask);
+    $("#11Task").text(elevenAmTask);
+    $("#12Task").text(twelvePmTask);
+    $("#13Task").text(onePmTask);
+    $("#14Task").text(twoPmTask);
+    $("#15Task").text(threePmTask);
+    $("#16Task").text(fourPmTask);
+    $("#17Task").text(fivePmTask);
 }
 
 showTasks();
+
 
 // This variable is used to determine whether a time-block is in the past, present, or future.
 var currentHour = moment().format("H");
