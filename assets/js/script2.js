@@ -10,47 +10,45 @@ function setDate() {
 
 setDate();
 
-var tasks = [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-]
-
-// var tasks = {
-//     9: "",
-//     10: "",
-//     11: "",
-//     12: "",
-//     13: "",
-//     14: "",
-//     15: "",
-//     16: "",
-//     17: "",
-// };
 
 
 
-$("#9Btn").on("click", function(){
+// This event listener adds task descriptions to local storage when a save button is selected.
+$(".saveBtn").on("click", function(){
     event.preventDefault();
-    var taskDescription = document.getElementById("9Task");
-    localStorage.setItem("9AM", taskDescription.value);
+    
+    var taskDescriptionNine = document.getElementById("9Task");
+    var taskDescriptionTen = document.getElementById("10Task");
+    var taskDescriptionEleven = document.getElementById("11Task");
+    var taskDescriptionTwelve = document.getElementById("12Task");
+    var taskDescriptionThirteen = document.getElementById("13Task");
+    var taskDescriptionFourteen = document.getElementById("14Task");
+    var taskDescriptionFifteen = document.getElementById("15Task");
+    var taskDescriptionSixteen = document.getElementById("16Task");
+    var taskDescriptionSeventeen = document.getElementById("17Task");
+
+    localStorage.setItem("9AM", taskDescriptionNine.value);
+    localStorage.setItem("10AM", taskDescriptionTen.value);
 })
 
-var nineAmTask = localStorage.getItem("9AM");
-console.log("My 9 is " + nineAmTask);
+// $("#10Btn").on("click", function(){
+//     event.preventDefault();
+//     var taskDescription = document.getElementById("10Task");
+//     localStorage.setItem("10AM", taskDescription.value);
+// })
 
+// These variables are used to retrieve tasks from location Storage.
+var nineAmTask = localStorage.getItem("9AM");
+var tenAmTask = localStorage.getItem("10AM");
+
+
+// This function takes the text within local storage and assigns it to the appropriate text area within the planner. 
 function showTasks() {
     $("#9Task").text(nineAmTask);
+    $("#10Task").text(tenAmTask);
 }
 
 showTasks();
-
 
 // This variable is used to determine whether a time-block is in the past, present, or future.
 var currentHour = moment().format("H");
