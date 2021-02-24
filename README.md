@@ -12,13 +12,27 @@ The goal of this project was to create a simple calendar application that displa
 5. When users refresh the application, their saved tasks are retreived from local storage and are displayed within the appropriate time blocks. 
 
 ## Solution
+This application uses the Moment.js JavaScript library to retrieve and display the current date at the top of the page. 
 
+**Variable and function used to display current date**
+
+    var currentDate = moment().format("dddd, MMMM DD, YYYY");
+
+    function setDate() {
+        var displayDate = document.getElementById("currentDay");
+        displayDate.innerHTML = currentDate;
+    }
+
+    setDate();
+
+The library was also used  
 
 ## Technologies Used
 1. HTML
 2. CSS
 3. JavaScript
 4. jQuery
+5. Moment.js 
 
 ## Questions?
 Contact me at the following locations:
