@@ -29,6 +29,13 @@ $(".saveBtn").on("click", function(){
 
     localStorage.setItem("9AM", taskDescriptionNine.value);
     localStorage.setItem("10AM", taskDescriptionTen.value);
+    localStorage.setItem("11AM", taskDescriptionEleven.value);
+    localStorage.setItem("12PM", taskDescriptionTwelve.value);
+    localStorage.setItem("1PM", taskDescriptionThirteen.value);
+    localStorage.setItem("2PM", taskDescriptionFourteen.value);
+    localStorage.setItem("3PM", taskDescriptionFifteen.value);
+    localStorage.setItem("4PM", taskDescriptionSixteen.value);
+    localStorage.setItem("5PM", taskDescriptionSeventeen.value);
 })
 
 // $("#10Btn").on("click", function(){
