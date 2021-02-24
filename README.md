@@ -25,7 +25,33 @@ This application uses the Moment.js JavaScript library to retrieve and display t
 
     setDate();
 
-The library was also used  
+The library was also used to store the current hour of the day in a variable. That variable was then used to determine what class - past, present, or future - should be assigned to each time block. The class determined the color-coding each block received. 
+
+**Variable and function used to determine past, present, or future classification**
+
+    var currentHour = moment().format("H");
+
+    function pastPresentFuture9 () {
+    if (currentHour == 9) {
+        $("#9").removeClass("past");
+        $("#9").removeClass("future");
+        $("#9").addClass("present");
+    } 
+
+    else if (currentHour > 9) {
+        $("#9").removeClass("present");
+        $("#9").removeClass("future");
+        $("#9").addClass("past");
+    }
+
+    else {
+        $("#9").removeClass("present");
+        $("#9").removeClass("past");
+        $("#9").addClass("future");
+    }
+}
+
+text
 
 ## Technologies Used
 1. HTML
