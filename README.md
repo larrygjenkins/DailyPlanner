@@ -48,10 +48,31 @@ The library was also used to store the current hour of the day in a variable. Th
         $("#9").removeClass("present");
         $("#9").removeClass("past");
         $("#9").addClass("future");
-    }
-}
+    }}
 
-text
+Text areas were used to capture events and/or tasks for each given time block. Each text area has an associated save button, and when a user selects the button, any text they entered is saved to local storage.  
+
+**Example of save button event listener**
+
+    $(".saveBtn").on("click", function(){
+    event.preventDefault();
+    
+    var taskDescriptionNine = document.getElementById("9Task");
+
+    localStorage.setItem("9AM", taskDescriptionNine.value);
+    })
+
+This stored information is retrieved and displayed 
+
+**Example**
+
+    var nineAmTask = localStorage.getItem("9AM");
+
+    function showTasks() {
+    $("#9Task").text(nineAmTask);
+    }
+
+    showTasks();
 
 ## Technologies Used
 1. HTML
