@@ -24,15 +24,11 @@ Contact me at the following locations:
 * LinkedIn: <a href="https://www.linkedin.com/in/l-jenkins/">linkedin.com/in/l-jenkins</a>
 
 ## Location
-Use the following link to access the repository associated with this project: [Larry Jenkins' Portfolio Repository](https://github.com/larrygjenkins/larrygjenkins.github.io)
+Use the following link to access the repository associated with this project: [Daily Planner Repository](https://github.com/larrygjenkins/DailyPlanner)
 
-Use the following link to access the site: [Larry Jenkins' Portfolio](https://larrygjenkins.github.io/index.html)
+Use the following link to access the application: [Daily Planner](https://larrygjenkins.github.io/DailyPlanner/)
 
-## Example Images
-Following is an image of the site's homepage:
+## Example Image
+Following is an image of the application:
 
-![Larry Jenkins' Portfolio Homepage](./assets/images/AboutMeScreenshot.PNG)
-
-Following is an image of the portfolio page:
-
-![Larry Jenkins' Portfolio Homepage](./assets/images/PortfolioPageScreenshot.PNG)
+![Daily Planner Application](./assets/images/DailyPlannerScreenshot.PNG)
