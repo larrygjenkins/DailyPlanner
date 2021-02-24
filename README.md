@@ -2,13 +2,10 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/larrygjenkins/larrygjenkins.github.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-The goal of this project was to create a portfolio site, using the Bootstrap framework. One of the key aims of this exercise was to experiment with Bootstrap's grid system and create a site that was responsive to a user's screensize. 
+The goal of this project was to create a simple calendar application that displayed the current date and allowed users to enter tasks and/or events for the hours between 9AM and 5PM. Hours of the day would be color-coded based on whether they were in the past, present, or future, and events recorded by the user were added to (and retrieved from) local storage.
 
-The Portolio page ofon the site contains images from recently completed projects. Each image contains a link, taking users to the live application. Each listed project also contains a link to its respective GitHub repository. 
+## Acceptance Criteria
 
-Finally, the Contact page contains the beginnings of a form that allows a visitor to enter a name, email, and message, but it does not currently capture the data when a user selects the Submit button. This functionality will be added in a later iteration. 
-
-For now, visitors can contact the author using the email, LinkedIn, or Github icons available in the footer of each page.
 
 ## Technologies Used
 1. HTML
